@@ -1,0 +1,120 @@
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Menú de Animales</title>
+    <style>
+        /* Estilos básicos para el menú */
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            background-color: #2c3e50;
+            display: flex; /* Alinea las columnas */
+        }
+
+        nav > ul > li {
+            position: relative;
+            flex: 1;
+            text-align: center;
+        }
+
+        nav a {
+            display: block;
+            padding: 15px;
+            color: white;
+            text-decoration: none;
+            font-family: Arial, sans-serif;
+            font-weight: bold;
+        }
+
+        nav li:hover {
+            background-color: #34495e;
+        }
+
+        /* Ocultar las listas desplegables por defecto */
+        .dropdown {
+            display: none;
+            position: absolute;
+            background-color: #ecf0f1;
+            width: 100%;
+            box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+        .dropdown li a {
+            color: #333;
+            font-weight: normal;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .dropdown li a:hover {
+            background-color: #bdc3c7;
+        }
+
+        /* Mostrar al pasar el mouse */
+        nav > ul > li:hover .dropdown {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+
+<nav>
+    <ul>
+        <li>
+            <a href="#">Peces</a>
+            <ul class="dropdown">
+                <li><a href="Atún.html">Atún</a></li>
+                <li><a href="Caballito_de_mar.html">Caballito de mar</a></li>
+                <li><a href="Pez_Guppy.html">Pez Guppy</a></li>
+            </ul>
+
+
+        </li>
+
+        <li>
+            <a href="#">Mamíferos</a>
+            <ul class="dropdown">
+                <li><a href="Cebra.html">Cebra</a></li>
+                <li><a href="Rinoceronte.html">Rinoceronte</a></li>
+                <li><a href="Venado_cola_blanca.html">Venado cola blanca</a></li>
+            </ul>
+        </li>
+
+        <li>
+            <a href="#">Anfibios</a>
+            <ul class="dropdown">
+                <li><a href="Cecilia_mexicana.html">Cecilia mexicana</a></li>
+                <li><a href="Gallipato.html">Gallipato</a></li>
+                <li><a href="Proteo.html">Proteo</a></li>
+            </ul>
+        </li>
+
+        <li>
+            <a href="#">Aves</a>
+            <ul class="dropdown">
+                <li><a href="Quetzal.html">Quetzal</a></li>
+                <li><a href="Tucán.html">Tucán</a></li>
+                <li><a href="Momoto_mexicano.html">Momoto mexicano</a></li>
+            </ul>
+        </li>
+
+        <li>
+            <a href="#">Reptiles</a>
+            <ul class="dropdown">
+                <li><a href="Cocodrilo_del_nilo.html">Cocodrilo del Nilo</a></li>
+                <li><a href="Iguana_verde.html">Iguana verde</a></li>
+                <li><a href="Camaleon.html">Camaleón</a></li>
+            </ul>
+        </li>
+
+        <li> 
+            <a href="#">Abeja Melipona</a>
+            <ul class="dropdown">
+                <li><a href="Info_abeja.html">Información de la abeja</a></li>
+            </ul>
+        </li>
+</nav>
+
+</body>
+</html>
